@@ -21,3 +21,10 @@ class ResPartner(models.Model):
         result = action.read()[0]
         result['domain'] = [('partner_id', '=', self.id)]
         return result
+
+    #la fonction qui permet de compter le nombre de voyage lier a un contact
+    def voyages_count(self):
+        # on compte le nombre de voyage lier a un contact
+        for partner in self:
+            partner.voyage_count = len(partner._name)
+            return partner.voyage_count
