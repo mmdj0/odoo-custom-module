@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <record id="show_voyage_list" model="ir.actions.act_window">
+            <field name="name">Voyages de l'Utilisateur</field>
+            <field name="res_model">models.voyage</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('partner_id', '=', active_id)]</field>
+            <field name="type">ir.actions.act_window</field>
+        </record>
+    </data>
+</odoo>

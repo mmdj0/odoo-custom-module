@@ -9,7 +9,8 @@
     """,
     # data files always loaded at installation
     'data': [
-        'views/mymodule_view.xml',
+        'views/contact_views.xml',
+        'views/show_voyage_views.xml',
     ],
     # data files containing optionally loaded demonstration data
     # 'demo': [

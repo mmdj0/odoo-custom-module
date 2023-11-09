@@ -14,7 +14,7 @@
                     <field name="city"/>
 
                     <!-- smart button -->
-                    <button name="open_travel_list" string="Voyages de l'Utilisateur" type="object" class="oe_highlight"/>
+                    <button name="open_voyage_list" string="Voyages de l'Utilisateur" type="object" class="oe_highlight"/>
                 </group>
             </form>
         </field>

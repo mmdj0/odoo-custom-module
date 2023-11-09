@@ -15,11 +15,9 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
 
     # Add this method
-    def open_travel_list(self):
-        # Define the logic to open the list of travels associated with the contact
-        # You can navigate to the list view of travels here
-        # Example: return an action to open the list view
-        action = self.env.ref('contact_travel.action_voyage_list')
+    def open_voyage_list(self):
+        # quand l'utilisateur click sur le bouton il sera deriger vers la vue contenante la liste des voyages
+        action = self.env.ref('contact_travel.show_voyage_list')
         result = action.read()[0]
         result['domain'] = [('partner_id', '=', self.id)]
         return result
